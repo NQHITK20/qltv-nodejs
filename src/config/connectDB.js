@@ -11,7 +11,7 @@ const sequelize = new Sequelize('test', 'root', null, {
 let connectDB = async () => {
     try {
         await sequelize.authenticate();
-        console.log('Kết nối database thành công.');
+        console.log('Kết nối database thành công.') ;
     } catch (error) {
         console.error('Unable to connect to the database:', error);
     }
